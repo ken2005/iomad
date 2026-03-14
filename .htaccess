@@ -1,0 +1,4 @@
+# O2SWITCH - Force PHP 8.1 (Version EasyApache - Tout inclus)
+<FilesMatch "\.php$">
+    SetHandler application/x-httpd-ea-php81___lsphp
+</FilesMatch>

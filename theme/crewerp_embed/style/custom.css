@@ -1,0 +1,142 @@
+/**
+ * Custom CSS for theme_crewerp_embed - Headless/Iframe Theme
+ * Hides all UI elements to display only course content
+ *
+ * @package    theme_crewerp_embed
+ * @copyright  2024
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+/* Hide all navigation and UI elements */
+#page-header,
+#page-footer,
+.fixed-top,
+.navbar,
+.secondary-navigation,
+.drawer-left,
+.drawer-right,
+.block-region,
+#nav-drawer,
+[data-region="drawer"],
+.activity-navigation,
+.breadcrumb,
+#region-main-settings-menu,
+.navbar-nav,
+.navbar-brand,
+#page-navbar,
+#page-header .card,
+#page-footer .card,
+header,
+footer,
+nav[role="navigation"],
+.drawer,
+.drawer-toggle,
+#nav-drawer-toggle,
+#region-main-box,
+#region-bs-main-and-pre,
+#region-bs-main-and-post,
+#region-main-pre,
+#region-main-post {
+    display: none !important;
+}
+
+/* Reset layout - remove margins, padding, borders */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+#page {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    min-height: 100vh !important;
+    height: 100vh !important;
+}
+
+#page-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    min-height: 100vh !important;
+}
+
+#region-main {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    min-height: 100vh !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Ensure content area takes full viewport */
+#region-main-box {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#region-main-box #region-main {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Hide any remaining navigation elements */
+.navbar-expand,
+.navbar-collapse,
+.navbar-toggler,
+.page-header-actions,
+.page-header-headings,
+.usermenu,
+.langmenu,
+.custommenus,
+.navbar-light,
+.navbar-dark {
+    display: none !important;
+}
+
+/* Ensure course content is visible and properly sized */
+#region-main .card,
+#region-main .activity,
+#region-main .course-content,
+#region-main .scorm-content,
+#region-main iframe {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Remove any container constraints */
+.container,
+.container-fluid,
+.row,
+.col {
+    max-width: 100% !important;
+}
+
+/* Hide block regions completely */
+[data-region="blocks"],
+.block,
+.side-pre,
+.side-post {
+    display: none !important;
+}
+
+/* Ensure proper scrolling within iframe */
+html,
+body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+#page {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
